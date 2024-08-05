@@ -1,0 +1,8 @@
+[package]
+name = "rust-bazaar-analyzer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+json = "0.12.4"
+reqwest = { version = "*", features = ["blocking"] }
