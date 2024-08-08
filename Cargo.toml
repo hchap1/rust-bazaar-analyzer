@@ -2,7 +2,12 @@
 name = "rust-bazaar-analyzer"
 version = "0.1.0"
 edition = "2021"
+tokio-macros = "2.4.0"
 
 [dependencies]
 json = "0.12.4"
-reqwest = { version = "*", features = ["blocking"] }
+reqwest = "*"
+sqlx = "0.8.0"
+[dependencies.tokio]
+features = ["full"]
+version = "1.39.2"
